@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>RetailDB</DataSourceReference>
+      <CommandText>SELECT ma.persona.persona, ma.persona.codigo, ma.persona.razonSocial, ma.persona.direccion, ma.persona.rucDni, ma.persona.telefono1, ma.persona.telefono2
+FROM     ma.persona INNER JOIN
+                  ma.relacionPersona ON ma.persona.persona = ma.relacionPersona.persona INNER JOIN
+                  ma.tipoPersona ON ma.relacionPersona.tipoPersona = ma.tipoPersona.tipoPersona
+WHERE  (ma.tipoPersona.descripcionTipoPersona = 'Clientes')</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="persona">
+        <DataField>persona</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="codigo">
+        <DataField>codigo</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="razonSocial">
+        <DataField>razonSocial</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="direccion">
+        <DataField>direccion</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="rucDni">
+        <DataField>rucDni</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="telefono1">
+        <DataField>telefono1</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="telefono2">
+        <DataField>telefono2</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
