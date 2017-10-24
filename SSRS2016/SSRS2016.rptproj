@@ -33,7 +33,9 @@
         <TargetServerURL>http://localhost/reportserver</TargetServerURL>
         <TargetFolder>Ventas</TargetFolder>
         <TargetDataSourceFolder>OrigeneDatos</TargetDataSourceFolder>
+        <OverwriteDataSources>true</OverwriteDataSources>
         <TargetDatasetFolder>DatosComunes</TargetDatasetFolder>
+        <OverwriteDatasets>true</OverwriteDatasets>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
       </Options>
     </Configuration>

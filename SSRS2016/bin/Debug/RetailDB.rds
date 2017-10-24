@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="RetailDB">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=DESKTOP-HUHDKSC;Initial Catalog=RETAIL</ConnectString>
+    <ConnectString>Data Source=DESKTOP-VL1BPV4;Initial Catalog=RETAIL</ConnectString>
     <IntegratedSecurity>true</IntegratedSecurity>
   </ConnectionProperties>
   <DataSourceID>c2f864fb-8c09-4def-9191-730eb97643ea</DataSourceID>
